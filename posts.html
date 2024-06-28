@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>帖子 - 星月编程学习小站</title>
+    <!-- 同index一样的莫名bugs，只要css和html同名貌似就会死掉，原因未知 -->
+    <link rel="stylesheet" href="css/post.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/general.css">
+    <script src="js/post_info.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/posts.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/footer.js"></script>
+</head>
+
+
+<body>
+    <!-- <iframe src="nav.html" frameborder="0" width="100%" height="48px"></iframe> -->
+    <div id="ifr"></div>
+    <div class="sidebar">
+        <div class="sidebar_main">
+        </div>
+    </div>
+    <div class="post_main">
+        <input type="text" placeholder="输入要搜索的帖子标题内容" id="search_input" list="search_list" maxlength="20">
+        <datalist id="search_list"></datalist>
+        <input type="button" value="搜索" id="search_button" onclick="show_search()">
+        <div id="search_feedback"></div>
+        <div id="posts"></div>
+        <div class="page_button">
+            <div class="pb_list">
+                <div class="page_block" id="page_first_fa" onclick="goto_page(1)">
+                    <div class="page_first"></div>
+                </div>
+        
+                <div class="page_block" id="page_last_fa">
+                    <div class="page_last"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <iframe src="footer.html" frameborder="0" width="100%" height="48px" scrolling="no" id="footer_frame" class="footer_frame"></iframe>
+</body>
+
+</html>

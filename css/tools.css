@@ -1,0 +1,21 @@
+#tx{
+    margin-top: 20px;
+    margin-left: 560px;
+    width: 150px;
+}
+p{
+    margin-left: 520px;
+    font-size: 20px;
+}
+.wz{
+    margin-left: 40px;
+    font-size: 20px;
+    color: rgb(14, 44, 100);
+}
+.tools_list{
+    margin-left: 60px;
+    text-indent: 0;
+    font-size: 18px;
+    color: rgb(14, 44, 100);
+    word-spacing: 1em;
+}
